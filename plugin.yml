@@ -1,0 +1,5 @@
+name: LootBox
+description: Tap chest with slimeball to get cool items!
+version: 0.3
+main: LootBox\main
+api: 1.11.0
