@@ -18,6 +18,9 @@ class main extends PluginBase implements Listener{
 	private $config;
 	private $items;
 	public function onEnable(){
+		@mkdir($this->getDataFolder());
+                $this->saveDefaultConfig();
+                $this->reloadConfig();
 		$this->getLogger()->info("Loaded! :)");
 		$this->getServer()->getPluginManager()->registerEvents($this ,$this);
 		$this->saveDefaultConfig();
